@@ -45,7 +45,7 @@ button.addEventListener('click',async function getQuote() {
 
 clear.addEventListener("click", function(){
 
-  localStorage.clear(); //this clears the local storage 
+  localStorage.removeItem("data"); //this clears the local storage 
   location.reload(); // this refreshes the page. 
 })
 
