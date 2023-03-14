@@ -23,6 +23,7 @@ N/A
 
 ## Questions 
 If any questions use github via
+
 William Combee: https://github.com/Willyum863	                     
 Seanovan Smith:  https://github.com/mvddy	      
 Daniel Tran: https://github.com/danieltran2016
