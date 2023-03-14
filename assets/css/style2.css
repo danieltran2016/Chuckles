@@ -51,6 +51,7 @@
   
   p {
     margin-bottom: 15px;
+    color: black;
   }
   
   code {
@@ -84,11 +85,12 @@
     width: 96%;
     margin: 20px auto;
   }
-`  
+  
   footer {
     margin: 15px;
     text-align: center;
     text-shadow: #000000 4px 4px;
+    
   }
   
   .row {
@@ -197,5 +199,9 @@
       flex: 0 0 33.333%;
       max-width: 33.333%;
     }
+  }
+
+   #dad-history-list li {
+    list-style-type: disc !important;
   }
   
