@@ -1,38 +1,38 @@
 //var category = ["animal","career","celebrity","explicit","fashion","food","history","money","movie","music","political","religion","science","sport","travel"];
 
- 
-var showHis = document.querySelector('#chuck-history');
-var clear = document.querySelector('#clear-chuck');
-var historyList = document.querySelector("#chuck-history-list");
+var clearChuck = document.querySelector('#chuck-clear');
+var chuckHistoryList = document.querySelector("#chuck-history-list");
 var button = document.querySelector('#chuck-btn');
 var chuckRep = document.querySelector('#chuck-joke');
 var newJoke = [];
 
+
+//get the stored chuck-data and render it
 function init(){
- var storedChucks = JSON.parse(localStorage.getItem("data"))
+ var storedChucks = JSON.parse(localStorage.getItem("chuck-data"))
  if (storedChucks !== null) { 
    newJoke = storedChucks;  
     
  }
    renderChucks(); 
  }
-
+//render initial joke
  function renderChucks() {
-   historyList.innerHTML = ""; 
+   chuckHistoryList.innerHTML = ""; 
    for (var i = 0; i < newJoke.length; i++) { 
      var jokes = newJoke[i]; 
      var li = document.createElement("li"); 
      li.textContent = jokes; 
      li.setAttribute("data-index", i); 
-     historyList.appendChild(li); 
+     chuckHistoryList.appendChild(li); 
    }
  }
  init()
-
+//stringify the data and set it in storage
  function storedChucks() {
    localStorage.setItem("chuck-data", JSON.stringify(newJoke)); 
  }
-
+//click event listener added to getChuck function
 button.addEventListener("click", getChuck);
 
  function getChuck () {
@@ -47,11 +47,11 @@ button.addEventListener("click", getChuck);
   renderChucks()
  
 }
+//click event listener added to clear the locally stored chuck-data and reload the page
+clearChuck.addEventListener("click", function(){
 
-clear.addEventListener("click", function(){
-
- localStorage.clear(); //this clears the local storage 
- location.reload(); // this refreshes the page. 
+ localStorage.removeItem('chuck-data'); 
+ location.reload(); 
 })
  
 
