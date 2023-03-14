@@ -2,7 +2,7 @@ var quoteRep = document.querySelector("#quote");
 var showHis = document.querySelector("#history");
 var button = document.querySelector('#btn'); //this is the button to run the quote API and storage function 
 var clear = document.querySelector('#clear'); //this is a clear button to clear the local storage 
-var historyList = document.querySelector("#history-list"); //this is the history list to show the previous quotes
+var historyList = document.querySelector("#dad-history-list"); //this is the history list to show the previous quotes
 var allQuotes = []; //this is the inittial empty quotes array 
 
 function init(){
