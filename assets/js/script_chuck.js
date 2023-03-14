@@ -2,7 +2,7 @@
 
 var clearChuck = document.querySelector('#chuck-clear');
 var chuckHistoryList = document.querySelector("#chuck-history-list");
-var button = document.querySelector('#chuck-btn');
+var chuckButton = document.querySelector('#chuck-btn');
 var chuckRep = document.querySelector('#chuck-joke');
 var newJoke = [];
 
@@ -33,7 +33,7 @@ function init(){
    localStorage.setItem("chuck-data", JSON.stringify(newJoke)); 
  }
 //click event listener added to getChuck function
-button.addEventListener("click", getChuck);
+chuckButton.addEventListener("click", getChuck);
 
  function getChuck () {
    fetch('https://api.chucknorris.io/jokes/random')
