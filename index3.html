@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chuckles</title>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+        <link rel="stylesheet" href="./style2.css" />
+    </head>
+ <style>
+        body {
+        background-image: url("mic.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+       }
+ </style>
+    <body>
+        <header>
+            <h1 class="page-title">Chuckles </h1>
+            <h3 class="user-title"> User Story</h3>
+        </header>
+
+        <main>
+            <section class="row justify-center">
+                <div class="card-column">
+                    <figure class="cardC code-card">
+                        <h2 class= "card-header">Chuck Norris Jokes</h2>
+                        <figure class="imageC is-square">
+                            <img src="chuck.png">
+                          </figure>
+                        <div class="card-body">
+                            <div class= "joke" ></div>
+                            <button id="chuck-btn" class="button">Get Joke</button>
+                            <button id="chuck-clear" class = "button">Clear</button>
+                            <p id="chuck-joke">Chuck Joke Here </p>
+                        </div> 
+                        <pre class="code-block">
+                            <p>kouyChuck History</p>
+                            <ul id="chuck-history-list"></ul>
+
+                        </pre>
+                        <div class="chuck-history">Previous</div>
+                        <!-- store history  -->
+                    </figure>
+                </div>
+                <div class="card-column">
+                    <figure class="cardD code-card">
+                        <h2 class= "card-header">Dad Jokes</h2>
+                        <figure class="imageD is-square">
+                            <img src="dad.PNG">
+                        </figure>
+                        <div class="card-body">
+                            <div class="quote" ></div>
+                            <button id="dad-btn" class="button">Get Joke</button>
+                            <button id="dad-clear" class ="button">Clear</button>
+                            <p id="dad-quote">"Dad joke here"</p>
+                        </div> 
+                        <pre class="code-block">
+                            <type>Dad History</p>
+                                <ul id="dad-history-list"></ul>
+                        </pre>
+                        <div class="dad-history">Previous</div>
+                        <!-- store history  -->
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3>
+            Go out there and steal the crowd!!
+            </h3>
+        </footer>
+        <!-- <script src="./script_dad.js"></script> -->
+        <!-- <script src="./script_chuck.js"></script> -->
+    </body>
+</html>
