@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 var quoteRep = document.querySelector("#quote");
 var showHis = document.querySelector("#history");
 var button = document.querySelector('#btn'); //this is the button to run the quote API and storage function 
 var clear = document.querySelector('#clear'); //this is a clear button to clear the local storage 
+=======
+var quoteRep = document.querySelector("#dad-quote");
+var showHis = document.querySelector("#dad-history");
+var chuckButton = document.querySelector('#dad-btn'); //this is the button to run the quote API and storage function 
+var clear = document.querySelector('#dad-clear'); //this is a clear button to clear the local storage 
+>>>>>>> 759452774d51b0296de9853f7aca3066e60cb858
 var historyList = document.querySelector("#dad-history-list"); //this is the history list to show the previous quotes
 var allQuotes = []; //this is the inittial empty quotes array 
 
@@ -33,7 +40,7 @@ function storeQuotes() {
   localStorage.setItem("data", JSON.stringify(allQuotes)); //this stringifies the allquotes and sets it to the local storage 
 }
 
-button.addEventListener('click',async function getQuote() {
+chuckButton.addEventListener('click',async function getQuote() {
     const response = await fetch("https://icanhazdadjoke.com/slack", {method: "get", headers: {"Content-type": "application/json"} });
    const data= await response.json() 
    console.log(data)
