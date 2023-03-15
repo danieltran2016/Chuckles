@@ -1,79 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chuckles</title>
-        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-        <link rel="stylesheet" href="./assets/css/style2.css" />
-    </head>
- <style>
-        body {
-        background-image: url("mic.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-       }
- </style>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Chuckles2</title>
+</head>
+
+<body class="bg">
+    <container class = "container has-text-centered">
         <header>
-            <h1 class="page-title">Chuckles </h1>
-            <h3 class="user-title"> User Story</h3>
+            <h1 class="top">Chuckles</h1>
+            <h2 class="us">Do you wanna be funny? Trying to break the ice at a party? Want to take a funny trip down memory lane? Do you want some refreshing old school 90’s/early 2000’s comedy? </h2>
         </header>
 
-        <main>
-            <section class="row justify-center">
-                <div class="card-column">
-                    <figure class="cardC code-card">
-                        <h2 class= "card-header">Chuck Norris Jokes</h2>
-                        <figure class="imageC is-square">
-                            <img src="./assets/images/chuck.png">
-                          </figure>
-                        <div class="card-body">
-                            <div class= "joke" ></div>
-                            <button id="chuck-btn" class="button">Get Joke</button>
-                            <button id="chuck-clear" class = "button">Clear</button>
-                            <p id="chuck-joke">Chuck Joke Here </p>
-                        </div> 
-                        <pre class="code-block">
-                            <p>Chuck History</p>
-                            <ul id="chuck-history-list"></ul>
+        <section class = "section">
+            <columns class="columns is-vcen ">
+                <empty1 class="column is-2">
+                </empty1>
+                <chuck-container class = "container has-text-centered box is-3" id="chuck-container">
+                                            <chuck-title>
+                            <h3 class = "is-size-1">Chuck Norris Jokes</h3>
+                        </chuck-title>
 
-                        </pre>
-                        <div class="chuck-history">Previous</div>
-                        <!-- store history  -->
-                    </figure>
+                        <chuck-pic class = "image is-inline-block is-fullwidth">
+                            <img src="./assets/images/chuck.png" alt="Chuck Norris picture" id="chuck-pic">
+                        </chuck-pic>
+
+                        <chuck-joke>
+                            <p id="chuck-joke" class = "is-size-4">Chuck Norris Joke </p>
+                        </chuck-joke>
+
+                        <chuck-button>
+                            <button id="chuck-btn" class="button is-primary is-large is-responsive is-outlined is-rounded">Get Joke</button>
+                            <button id="chuck-clear" class = "button is-danger is-large is-responsive is-outlined is-rounded">Clear</button>
+                        </chuck-button>
+
+                        <chuck-history>
+                            <h3 class = "is-size-3">Chuck History</h3>
+                            <ol id="chuck-history-list" class = "is-size-5 "></ol>
+                        </chuck-history>
+                </chuck-container>
+                <empty2 class="column is-2" id="hide">
+                </empty2>
+                <dad-container class = "container has-text-centered box is-3" id="dad-container">
+                        <dad-title>
+                            <h3 class = "is-size-1">Dad Jokes</h3>
+                        </dad-title>
+
+                        <dad-pic class = "image is-inline-block is-fullwidth">
+                            <img src="./assets/images/dad.PNG" alt="Stereotypical dad picture" id="dad-pic" >
+                        </dad-pic>
+
+                        <dad-joke>
+                            <p id="dad-quote" class = "is-size-4">Dad Joke</p>
+                        </dad-joke>
+
+                        <dad-button>
+                            <button id="dad-btn" class="button is-primary is-large is-responsive is-outlined is-rounded">Get Joke</button>
+                            <button id="dad-clear" class ="button is-danger is-large is-responsive is-outlined is-rounded">Clear</button>
+                        </dad-button>
+
+                        <dad-history>
+                            <h3 class = "is-size-3">Dad History</h3>
+                            <ol id="dad-history-list" class = "is-size-5 has-text-info"></ol>
+                        </dad-history>
+                </dad-container>
+                <empty3 class="column is-2">
+                </empty3>
+            </columns>
+        </section>
+
+        <div class = "container mb-6">
+            <div class="content has-text-centered">
+            <h4 id="callout">If you give someone a program, you will frustrate them for a day; if you teach them how to program, you will frustrate them for a lifetime.!</h4>
+            <h3 class="is-size-2 has-text-white" id="hub">The Hubs </h3>
+                <div class="columns">
+                    <empty2 class="column is-1" id="hide">
+                    </empty2>
+                    <div class="column has-background-white" id="bottom">
+                        <a href="https://github.com/Willyum863" class="is-size-3">William Combee</a>
+                        <i class="fa fa-github" style="font-size:48px;color:rgb(0, 255, 85)"></i>
+                    </div>
+                    <empty2 class="column is-1" id="hide">
+                    </empty2>
+                    <div class="column has-background-white" id="bottom">
+                        <a href="https://github.com/mvddy" class="is-size-3">Seanovan Smith</a> 
+                        <i class="fa fa-github" style="font-size:48px;color:rgb(0, 4, 255)"></i>
+                    </div>
+                    <empty2 class="column is-1" id="hide">
+                    </empty2>
+                    <div class="column has-background-white" id="bottom">
+                        <a href="https://github.com/danieltran2016" class="is-size-3">Daniel Tran</a> 
+                        <i class="fa fa-github" style="font-size:48px;color:red"></i>
+                    </div>
+                    <empty2 class="column is-1" id="hide">
+                    </empty2>
                 </div>
-                <div class="card-column">
-                    <figure class="cardD code-card">
-                        <h2 class= "card-header">Dad Jokes</h2>
-                        <figure class="imageD is-square">
-                            <img src="./assets/images/dad.PNG">
-                        </figure>
-                        <div class="card-body">
-                            <div class="quote" ></div>
-                            <button id="dad-btn" class="button">Get Joke</button>
-                            <button id="dad-clear" class ="button">Clear</button>
-                            <p id="dad-quote">"Dad joke here"</p>
-                        </div> 
-                        <pre class="code-block">
-                            <type>Dad History</p>
-                                <ul id="dad-history-list"></ul>
-                        </pre>
-                        <div class="dad-history">Previous</div>
-                        <!-- store history  -->
-                    </figure>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <h3>
-            Go out there and steal the crowd!!
-            </h3>
-        </footer>
-        <!-- <script src="./script_dad.js"></script> -->
-        <!-- <script src="./script_chuck.js"></script> -->
-        <script src="./assets/js/script_dad.js"></script>
-        <script src="./assets/js/script_chuck.js"></script>
-    </body>
+            </div>
+        </div>
+
+    </container>
+
+    <script src="./assets/js/script_dad.js"></script>
+    <script src="./assets/js/script_chuck.js"></script>
+</body>
+
 </html>
