@@ -10,6 +10,10 @@ As a user I want to quickly look up some good chuck norris and dad jokes so that
 As a user I want to be able to see previous jokes at a glance in case I momentarily forget it. 
 As a user I want to be able to clear it once the jokes have been used so that people think im original.
 
+## Credits
+Chuck Norris API: https://api.chucknorris.io/
+Dad Jokes API: https://icanhazdadjoke.com/
+
 ---
 
 ## Features
