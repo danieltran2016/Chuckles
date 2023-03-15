@@ -48,9 +48,16 @@
     outline-color: #000000;
     outline-width: 2px;
   }
+
+  #foot {
+    position: absolute;
+    bottom: 5px;
+    object-position: center;
+  }
   
   p {
     margin-bottom: 15px;
+    color: #000000;
   }
   
   code {
@@ -84,7 +91,7 @@
     width: 96%;
     margin: 20px auto;
   }
-`  
+  
   footer {
     margin: 15px;
     text-align: center;
@@ -153,6 +160,19 @@
   .code-card:hover .card-header {
     box-shadow: inset 0px 0px 10px var(--eyes), 0 0 15px var(--eyes);
   }
+
+  .button {
+    border: none;
+    color: white;
+    background-color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
   
   .code-card .code-block {
     flex-grow: 1;
@@ -182,7 +202,7 @@
       flex: 0 0 50%;
       max-width: 50%;
     }
-  
+  /* fix felx properties */
     .card-column:last-child {
       flex-grow: 1;
     }
