@@ -32,3 +32,5 @@ Daniel Tran: https://github.com/danieltran2016
 ![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Deployed
+https://danieltran2016.github.io/Chuckles/
+![deployed](https://user-images.githubusercontent.com/109175376/225247974-2dffacbe-41e0-4407-9696-3d351560eac8.gif)
