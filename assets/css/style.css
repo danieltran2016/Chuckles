@@ -1,0 +1,79 @@
+body, html {
+height: 100%;}
+    
+.bg {
+background-image: url("../images/mic.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: scroll;}
+
+h1 {
+color: white;
+font-weight: bold;
+text-shadow: -10px 10px 5px #000000;
+font-size: 100px;}
+
+h2{
+color: white;
+font-weight: bold;
+text-shadow: -10px 10px 5px #000000;
+font-size: 40px;}
+
+h3{
+color:rgb(143, 7, 7);}
+
+#callout {
+color: white;
+font-weight: bold;
+text-shadow: -10px 10px 5px #000000;
+font-size: 35px;}
+
+#hub {
+color: white;
+font-weight: bold;
+text-shadow: -10px 10px 5px #000000;
+font-size: 35px;}
+
+li{
+color:rgba(252, 5, 5, 0.479);
+padding: 10px;}
+
+ol{
+padding: 12px;}
+
+p{
+color:rgb(255, 0, 0);}
+
+.foot {
+position: fixed;
+bottom: 5px;
+background-color: transparent;
+width: 100vw;
+height: 100vh;}
+
+#hide{
+display: flex;
+max-height:none;}
+
+#chuck-pic {
+border-radius: 30px;
+box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.377);}
+
+#dad-pic {
+border-radius: 30px;
+box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.377);}
+
+#chuck-container{
+border-radius: 30px;
+box-shadow: -20px 20px 4px rgba(0, 0, 0, 0.5);}
+
+#dad-container{
+border-radius: 30px;
+box-shadow: -20px 20px 4px rgba(0, 0, 0, 0.5);}
+
+#bottom{
+border-radius: 30px;
+box-shadow: -20px 20px 4px rgba(0, 0, 0, 0.5);
+margin-bottom: 15px;}
+
