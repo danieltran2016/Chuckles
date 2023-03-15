@@ -1,5 +1,4 @@
 var quoteRep = document.querySelector("#dad-quote");
-var showHis = document.querySelector("#dad-history");
 var button = document.querySelector('#dad-btn'); //this is the button to run the quote API and storage function 
 var clear = document.querySelector('#dad-clear'); //this is a clear button to clear the local storage 
 var historyList = document.querySelector("#dad-history-list"); //this is the history list to show the previous quotes
